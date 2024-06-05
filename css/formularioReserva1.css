@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor_horas{
+    
+    position: absolute;
+    width: 100%;
+    background: #45a049;
+    min-height: 80vh;
+    max-height: 80vh;
+}
+
+#contenedor_reservas{
+    background: #fff;
+    border-radius: 10px;
+    height: 600px;
+}
+
+#texto_reservas{
+    font-size: 26px;
+    
+}

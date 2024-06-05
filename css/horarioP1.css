@@ -1,0 +1,49 @@
+#contenedor_horario{
+   position: absolute;
+   width: 100%;
+   background: #45a049;
+   display: flex;
+   float: left;
+   
+}
+
+body{
+    margin: 0;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+#contenedor_horario .table {
+    color: white; /* Cambia el color del texto de la tabla a blanco */
+    border-collapse: separate; /* Desactiva el colapso de bordes */
+    border-spacing: 10px; /* Espacio entre celdas */
+    table-layout: fixed; /* Fija el ancho de la tabla */
+    width: 100%;
+    border: none;
+    
+}
+
+ #contenedor_horario td, #contenedor_horario th {
+    border: 1px solid black; /* Borde de cada celda en negro */
+    padding: 8px;
+    border-radius: 10px;
+    width: 50px;
+    white-space: nowrap
+}
+
+#contenedor_horario th{
+    text-transform: uppercase;
+    
+    
+}
+.hora{
+    visibility: hidden;
+}
+
+#contenedor_info{
+    display: flex;
+    float: right;
+    border: 2px solid black;
+}

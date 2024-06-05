@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 20px;
+    background-color: #45a049;;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+.image-container img {
+    width: 30%; /* Ajusta el ancho de las imágenes según sea necesario */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.35);
+}
+
+.image-container img:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.button {
+    width: 30%; /* Ajusta el ancho de los botones según sea necesario */
+    padding: 10px;
+    background-color: #45a049;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.35);
+
+}
+
+.button:hover{
+    border: 2px solid white;
+    box-shadow: none;
+}
+
+.button1{
+    margin-top: 5px;
+    width: 30%; /* Ajusta el ancho de los botones según sea necesario */
+    padding: 10px;
+    background-color: #45a049;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.35);
+
+}
+
+.button1:hover{
+    border: 2px solid white;
+    box-shadow: none;
+}

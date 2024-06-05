@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+    transition: all 0.5s ease;
+}
+ #pista1{
+    margin-top: 50px;
+}
+
+header{
+    width: 100%;
+}
+
+header nav{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 58px;
+    background-color: #343434;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 14px 0;
+    z-index: 1;
+    width: 100%;
+    font-size: 1.4rem;
+    border: 2px solid #000;
+    border-top-width: 0;
+    border-bottom-width: 4px;
+    transition: all 0.5s ease;
+}
+header nav::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg, green 0 calc(33.34vw - 3px), green 0 calc(66.67vw - 6px), green 0 calc(100vw - 10px));
+    animation: scroll-progress linear;
+    animation-timeline: scroll(root);
+}
+@keyframes scroll-progress {
+    100% {
+        width: 100%;
+    }
+}
+header nav a:nth-child(1):hover{
+    background-color: green;
+    color: black;
+}
+header nav a:nth-child(2):hover{
+    background-color: green;
+    color: black;
+}
+header nav a:nth-child(3):hover{
+    background-color: green;
+    color: black;
+}
+.section{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    color: #fff;
+    border-bottom: 3px solid #000;
+    font-size: 4rem;
+    margin: 0;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.foto{
+    
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+.horario{
+    margin-top: 17px;
+    border: 1px solid black;
+    margin-left: 70px;   
+}
+button{
+    background-color: #4CAF50; /* Fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Texto blanco */
+    padding: 10px 10px; /* Relleno */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    border-radius: 12px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 150px;
+}
+button:hover{
+    background-color: #45a049; /* Fondo más oscuro */
+    transform: scale(1.05);
+}
+button:active{
+    background-color: #3e8e41; /* Fondo más oscuro al hacer clic */
+    transform: scale(0.95); /* Reducir ligeramente el tamaño */
+    box-shadow: 0 5px #666; /* Sombra */
+    transform: translateY(4px);
+}
+button a{
+    text-decoration: none;
+    color: #000;
+}
+div#pista1{
+    color: black;
+    background-color: #1976d2;
+}
+div#pista2{
+    background-color: #1976d2;
+}
+div#pista3{
+    background-color: #1976d2;
+}
+div#pista4{
+    background-color: #1976d2;
+}
+div#pista5{
+    background-color: #1976d2;
+}
+#scroll{
+    position: fixed;
+    top: calc(50vh - 15px);
+    right: 20px;
+    width: 30px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#scroll i{
+    font-size: 3rem;
+    color: #fff;
+}
+#scroll::after{
+    content: "Pistas";
+    position: absolute;
+    right: 2.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    bottom: 0.6rem;
+}
+@media screen and (max-width: 580px) {  
+    header nav a{
+        font-size: 1.2rem;
+    }
+
+    .hint::after{
+        content: "";
+    }
+}
+.cont > h2{
+    font-size: 58px;
+    color: #000;
+    float: left;
+    margin-right: 150px;
+    margin-top: 150px;
+}
+p{
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;  
+}
+#texto_ajuste1{
+    margin-left: 15px;
+}
+#texto_ajuste2{
+    margin-left: 15px;
+}
+#texto_ajuste3{
+    margin-left: 10px;
+}
+.salir{
+    border: 1px solid black;
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+
+
+

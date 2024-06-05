@@ -1,0 +1,252 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #45a049;
+    font-family: 'Kanit';
+}
+
+section{
+    padding: 40px;
+    
+}
+
+#section_reservas{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+#info_reservas{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.7);   
+    padding: 30px;
+    gap:30px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: #45a049;;
+}
+#info_reservas img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#info_reservas h1{
+     text-align: center;
+     color: #fff;
+     text-transform: uppercase;
+}
+#info_reservas a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.6);   
+}
+#info_reservas a:hover{
+    border-color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3)
+}
+#info_reservas:hover{
+    border-color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+#deportes_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+#deportes_header h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+#deportes_header a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.7);   
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background: #45a049;;
+}
+
+#deportes_header a:hover{
+    border-color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+#contenedor{
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.7); 
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+
+#contenedor:hover{
+    border-color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+#info_deporte{
+    cursor: pointer;
+    z-index: 1; /* Establece un valor de z-index más bajo para el video de fondo */
+    align-items: center;
+
+}
+#info_deporte h1{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    z-index: 2;
+
+}
+
+
+
+#contenedor_deporte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#contenedor_deporte:hover{
+    border-color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3)
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6); 
+
+}
+#contenedor #info_deporte i{
+    color: #fff;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+
+#info_deporte h1{
+    text-align: center;
+}
+
+#flecha_subir{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+
+}
+#flecha_subir button{
+    background-color: rgba(169, 169, 169, 0.6);
+    border: none;
+
+}
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+    overflow: hidden;
+    z-index: -1; /* Establece un valor de z-index más bajo para el video de fondo */
+    border-radius: 20px;
+
+
+}
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: green;
+
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px; /* Aumentado el padding para ocupar más espacio */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.register-button,
+.login-button {
+    padding: 15px 30px; /* Aumentado el padding para hacer los botones más grandes */
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.register-button {
+    background-color: #4CAF50; /* Verde */
+}
+
+.login-button {
+    background-color: #2196F3; /* Azul */
+}
+
+/* Agregando separación entre los botones */
+.register-button + .login-button {
+    margin-left: 15px;
+}
